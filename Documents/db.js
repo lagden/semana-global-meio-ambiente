@@ -52,17 +52,17 @@ var db = {
     }],
     video: {
         pt: {
-            img: 'semana-meio-ambiente',
+            img: 'semana-meio-ambiente.jpg',
             alt: 'Vídeo - Semana Global do Meio Ambiente',
             link: 'mms://mediacenters.valeglobal.net/regional/SMA_PORT_WMV_TI.wmv'
         },
         en: {
-            img: 'semana-meio-ambiente',
+            img: 'semana-meio-ambiente.jpg',
             alt: 'Vídeo - Global Environmental Week',
             link: 'mms://mediacenters.valeglobal.net/regional/SMA_ENG_WMV_TI.wmv'
         },
         es: {
-            img: 'semana-meio-ambiente',
+            img: 'semana-meio-ambiente.jpg',
             alt: 'Vídeo - Semana Global del Medio Ambiente',
             link: 'mms://mediacenters.valeglobal.net/regional/SMA_ESP__WMV_TI.wmv'
         }
