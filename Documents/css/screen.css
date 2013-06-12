@@ -1,0 +1,276 @@
+[class^="ico-"],
+[class*=" ico-"], [class^="infografico-"],
+[class*=" infografico-"] {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  *margin-right: .3em;
+  vertical-align: middle;
+  padding: 0;
+}
+
+.ico-sprite, .ico-bullet-down, .ico-bullet-right {
+  background: url('../images/sprites/ico-s32774f0fc2.png') no-repeat;
+}
+
+.ico-bullet-down {
+  background-position: 0 0;
+  height: 11px;
+  width: 11px;
+}
+
+.ico-bullet-right {
+  background-position: 0 -11px;
+  height: 11px;
+  width: 11px;
+}
+
+[class^="ico-"]:last-child,
+[class*=" ico-"]:last-child {
+  *margin-left: 0;
+}
+
+.infografico-sprite, .infografico-barreira, .infografico-ico-barreira, .infografico-ico-minerio, .infografico-ico-molusco, .infografico-ico-sacola, .infografico-ico-tapete, .infografico-minerio, .infografico-molusco, .infografico-sacola, .infografico-tapete {
+  background: url('../images/sprites/infografico-s055019ea39.png') no-repeat;
+}
+
+.infografico-barreira {
+  background-position: 0 -255px;
+  height: 635px;
+  width: 615px;
+}
+
+.infografico-ico-barreira {
+  background-position: -405px -128px;
+  height: 127px;
+  width: 135px;
+}
+
+.infografico-ico-minerio {
+  background-position: -270px -128px;
+  height: 125px;
+  width: 135px;
+}
+
+.infografico-ico-molusco {
+  background-position: 0 0;
+  height: 128px;
+  width: 135px;
+}
+
+.infografico-ico-sacola {
+  background-position: -135px -128px;
+  height: 125px;
+  width: 135px;
+}
+
+.infografico-ico-tapete {
+  background-position: 0 -128px;
+  height: 125px;
+  width: 135px;
+}
+
+.infografico-minerio {
+  background-position: 0 -890px;
+  height: 635px;
+  width: 615px;
+}
+
+.infografico-molusco {
+  background-position: 0 -1525px;
+  height: 635px;
+  width: 615px;
+}
+
+.infografico-sacola {
+  background-position: 0 -2160px;
+  height: 635px;
+  width: 615px;
+}
+
+.infografico-tapete {
+  background-position: 0 -2795px;
+  height: 635px;
+  width: 615px;
+}
+
+[class^="infografico-"]:last-child,
+[class*=" infografico-"]:last-child {
+  *margin-left: 0;
+}
+
+.ir {
+  border: 0;
+  font: 0/0 Arial;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.bb, .infoGraficoSemanaFrame .media__body .bl {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cf:before, .media:before, .cf:after, .media:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.cf:after, .media:after {
+  clear: both;
+}
+.cf, .media {
+  zoom: 1;
+}
+
+.clear {
+  clear: both;
+  float: none;
+}
+
+.bl {
+  display: block;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.relative {
+  position: relative;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tr {
+  text-align: right;
+}
+
+.tc {
+  text-align: center;
+}
+
+html {
+  font-size: 1em/1.5;
+  font-family: false, Arial, sans-serif;
+  overflow-y: scroll;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.caecilia {
+  font-family: "CaeciliaLTStd-Bold", Arial, sans-serif;
+}
+
+.media {
+  display: block;
+}
+
+.media__img {
+  float: left;
+  margin-right: 10px;
+}
+
+.media__img--rev {
+  float: right;
+  margin-left: 10px;
+}
+
+.media__img img,
+.media__img--rev img {
+  display: block;
+}
+
+.media__body {
+  overflow: hidden;
+}
+
+.media__body,
+.media__body > :last-child {
+  margin-bottom: 0;
+}
+
+.infoGraficoSemanaFrame .media__img img {
+  cursor: pointer;
+}
+.infoGraficoSemanaFrame .media__body .bl {
+  padding: 230px 140px 0px 160px;
+}
+.infoGraficoSemanaFrame .media__body .bl h3 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: white;
+}
+.infoGraficoSemanaFrame .media__body .bl p {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  color: white;
+}
+
+.accordionSemana h3 {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 15px;
+  line-height: 0.9375rem;
+}
+.accordionSemana h3.active, .accordionSemana h3:hover {
+  color: #ecb11f;
+}
+.accordionSemana h3 i {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  line-height: 15px;
+  line-height: 0.9375rem;
+  width: 11px;
+  height: 11px;
+  margin-right: 10px;
+}
+.accordionSemana .contentSemanaAccordion {
+  margin: 0;
+  padding: 0;
+}

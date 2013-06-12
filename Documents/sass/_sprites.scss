@@ -1,0 +1,35 @@
+@import "compass/utilities/sprites/base";
+
+// Helpers
+%complemento{
+    @include inline-block;
+    *margin-right: .3em;
+    vertical-align: middle;
+    padding: 0;
+}
+
+// Ico
+$ico-layout: smart;
+$ico-sprites-dimensions: true;
+@import "sprites/ico/*.png";
+@include all-ico-sprites(true);
+[class^="ico-"],
+[class*=" ico-"]{
+    @extend %complemento;
+    &:last-child{
+        *margin-left: 0;
+    }
+}
+
+// Infografico
+$infografico-layout: smart;
+$infografico-sprites-dimensions: true;
+@import "sprites/infografico/*.png";
+@include all-infografico-sprites(true);
+[class^="infografico-"],
+[class*=" infografico-"]{
+    @extend %complemento;
+    &:last-child{
+        *margin-left: 0;
+    }
+}

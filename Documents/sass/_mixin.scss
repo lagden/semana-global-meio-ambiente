@@ -1,0 +1,41 @@
+// Mixins
+@mixin attr-size($attr, $size, $base:16, $unit:rem) {
+    #{$attr}: #{strip-units($size)}px;
+    #{$attr}: relative-size($size, $base, $unit);
+}
+
+// clear-floats
+@mixin cf() {
+    &:before,
+    &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    & {
+        zoom: 1;
+    }
+}
+
+@mixin inline-block() {
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+}
+
+@mixin inline-block-important() {
+    display:inline-block !important;
+    *display:inline !important;
+    *zoom:1 !important;
+}
+
+@mixin sans-serif($prepend:false) {
+    $list: Arial, sans-serif;
+    font-family: join($prepend,$list,comma);
+}

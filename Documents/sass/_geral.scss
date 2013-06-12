@@ -1,0 +1,91 @@
+html{
+    font-size: #{($base-font-size/16px)*1em}/1.5;
+    @include sans-serif;
+    overflow-y:scroll;
+    min-height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.caecilia{
+    @include sans-serif('CaeciliaLTStd-Bold');
+}
+
+// stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+.media{
+    display:block;
+    @extend .cf;
+}
+    .media__img{
+        float:left;
+        margin-right:$base-spacing-unit;
+    }
+    .media__img--rev{
+        float:right;
+        margin-left:$base-spacing-unit;
+    }
+
+        .media__img img,
+        .media__img--rev img{
+            display:block;
+        }
+
+    .media__body{
+        overflow:hidden;
+    }
+        .media__body,
+        .media__body > :last-child{
+            margin-bottom:0;
+        }
+
+// Infografico
+.infoGraficoSemanaFrame{
+    .media__img{
+        img{
+            cursor: pointer;
+        }
+    }
+    .media__body{
+        .bl{
+            @extend .bb;
+            padding: 230px 140px 0px 160px;
+            h3{
+                @include attr-size('font-size', 18);
+                color: $white;
+            }
+            p{
+                @include attr-size('font-size', 15);
+                color: $white;
+            }
+        }
+    }
+}
+
+// Accordion
+.accordionSemana{
+    h3{
+        @include attr-size('font-size', 15);
+        @include attr-size('line-height', 15);
+        &.active,
+        &:hover{
+            color: $yellow;
+        }
+        i{
+            @include inline-block;
+            vertical-align: middle;
+            @include attr-size('line-height', 15);
+            width: 11px;
+            height: 11px;
+            margin-right: 10px;
+        }
+    }
+    .contentSemanaAccordion{
+        margin: 0;
+        padding: 0;
+    }
+}

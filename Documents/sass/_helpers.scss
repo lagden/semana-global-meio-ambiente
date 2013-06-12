@@ -1,0 +1,83 @@
+// For image replacement
+.ir {
+    border: 0;
+    font: 0/0 Arial;
+    text-shadow: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+// Hide from both screenreaders and browsers: h5bp.com/u
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    // Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p
+    &.focusable:active,
+    &.focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+}
+
+// Hide visually and from screenreaders, but maintain layout
+.invisible {
+    visibility: hidden;
+}
+
+// Complementos simples
+.bb {
+    @include box-sizing(border-box);
+}
+
+.cf{
+    @include cf;
+}
+
+.clear{
+    clear: both;
+    float: none;
+}
+
+.bl{
+    display: block;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.relative {
+    position:relative;
+}
+
+.tl{
+    text-align: left;
+}
+
+.tr{
+    text-align: right;
+}
+
+.tc{
+    text-align: center;
+}

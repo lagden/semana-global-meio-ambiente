@@ -1,0 +1,22 @@
+{
+  "name": "SemanaGlobalMeioAmbienteVale",
+  "version": "0.1.0",
+  "description": "Semana Global Meio Ambiente",
+  "repository": "",
+  "keywords": [
+    "intranet",
+    "vale",
+    "global"
+  ],
+  "author": "Thiago Lagden",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.x",
+    "grunt-contrib-livereload": "~0.1.x",
+    "grunt-contrib-compass": "~0.2.x",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.4.0",
+    "grunt-contrib-jshint": "~0.4.3"
+  }
+}
