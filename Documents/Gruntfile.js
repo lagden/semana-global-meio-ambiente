@@ -89,5 +89,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-livereload');
-  grunt.registerTask('default', ['concat', 'uglify', 'compass', 'livereload-start']);
+  grunt.registerTask('default', ['concat', 'uglify', 'compass']);
 };

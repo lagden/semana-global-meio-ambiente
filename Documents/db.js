@@ -22,8 +22,12 @@ var db = {
             pt: "\
 <h3>Instalação de barreiras de vento</h3>\
 <p>Para reduzir a emissão de poeira em nossos pátios de pelotas, minério e carvão, instalamos ao redor deles as barreiras chamadas 'Wind Fence'. Estas barreiras reduzem a velocidade do vento que passa sobre as pilhas de produtos e diminuem em aproximadamente 80% a quantidade de poeira lançada na atmosfera, de acordo com os monitoramentos de eficiência realizados no entorno do pátio.</p>",
-            en: '',
-            es: ''
+            en: '\
+<h3>Installation of wind fences</h3>\
+<p>To reduce dust emissions from our pellets, ore and coal yards, we installed barriers around them called wind fences. These barriers reduce the wind speed passing across stacks of products and, according to efficiency monitoring conducted in the yard vicinity, decrease the amount of dust released by approximately 80%.</p>',
+            es: '\
+<h3>Instalación de barreras de viento</h3>\
+<p>Para reducir la emisión de polvo en nuestro patios de acopio de minerales, instalamos alrededor de ellos las barreras de viento. Estas barreras reducen la velocidad del viento que pasa sobre las pilas de productos y disminuyen aproximadamente el 80% de la cantidad de polvo lanzado a la atmósfera, según los monitoreos de eficiencia realizados en los patios de acopio.</p>'
         }
     }, {
         css: 'minerio',
@@ -31,8 +35,12 @@ var db = {
             pt: '\
 <h3>Beneficiamento a seco do minério.</h3>\
 <p>Com o beneficiamento a seco do minério, dispensa-se o uso de água, o que evita a geração de rejeito e elimina a necessidade de barragem. Isso significa menos impactos ao meio ambiente e mais água nos rios.</p>',
-            en: '',
-            es: ''
+            en: '\
+<h3>Dry ore processing</h3>\
+<p>With dry ore processing, water is no longer needed. We avoid waste and the use of dams. This means less impact on the environment and more water in our rivers.</p>',
+            es: '\
+<h3>Procesamiento del mineral en seco</h3>\
+<p>A través del procesamiento del mineral en seco, no se requiere el uso del agua, lo que evita la generación de desechos y elimina la necesidad de represas. Eso se traduce en menos impacto para el medio ambiente y más agua en los ríos.</p>'
         }
     }, {
         css: 'tapete',
@@ -41,8 +49,25 @@ var db = {
 <h3>Criação de Tapetes Biocolonizados</h3>\
 <p>recuperadas - São os Tapetes Biocolonizados, feitos com espécies nativas resgatadas de áreas impactadas pela atividade da mineração.</p>\
 <p>É simples, barato e os resultados foram tão positivos que compartilhamos o aprendizado com outras empresas e entidades pesquisadoras.</p>',
-            en: '',
-            es: ''
+            en: '\
+<h3>Bioconolized mats production</h3>\
+<p>We have developed a new technique to reintroduce vegetation to areas that need to be recovered: bioconolized mats . The mats are made from native vegetation recovered from areas impacted by mining activities. They are simple, cost-effective, and the results are so positive that we have shared our innovation with other companies and research organisations.</p>',
+            es: '\
+<h3>Creación de mantos biocolonizados</h3>\
+<p>Desarrollamos una nueva técnica para reintroducir vegetales en áreas que necesitan ser recuperadas a través de mantos biocolonizados. Están hechos con especies nativas rescatadas de áreas impactadas por la actividad minera. Es sencillo, económico y los resultados fueron tan positivos que compartimos el aprendizaje con otras empresas y entidades investigadoras.</p>'
+        }
+    }, {
+        css: 'sacola',
+        info: {
+            pt: '\
+<h3>Confecção de bolsas com material reutilizado</h3>\
+<p>Os banners utilizados em eventos e apresentações, são usados depois como matéria-prima na confecção de ecobags, feitas por moradoras das comunidades em que a Vale atua. Além de colaborar com a preservação do meio ambiente, essa iniciativa possibilita uma fonte de renda complementar a essas famílias.</p>',
+            en: '\
+<h3>Bags made of reused material</h3>\
+<p>The banners that we use at events and presentantions are reused as the raw material for manufacturing eco-bags. These bags are made by residents of commnunities around our operations. Besides supporting environmental conversation, this initiative provides families with an additional source of income.</p>',
+            es: '\
+<h3>Confección de bolsas con material reutilizado</h3>\
+<p>La cartelería utilizada en eventos y presentaciones, después son la materia prima para la confección de bolsas ecológicas, hechas por habitantes de las comunidades en las que Vale opera. Además de colaborar con la conservación del medio ambiente, la iniciativa genera una fuente de ingreso complementaria para estas familias.</p>'
         }
     }, {
         css: 'molusco',
@@ -50,8 +75,12 @@ var db = {
             pt: '\
 <h3>Programa de cultivo de moluscos</h3>\
 <p>Após expandir as atividades de nossos portos, precisávamos iniciar uma atividade de aquicultura (cultivo de animais na água) e convidamos os pescadores para participar. Eles se profissionalizaram e hoje vivem do cultivo de moluscos (ostras e coquiles).</p>',
-            en: '',
-            es: ''
+            en: '\
+<h3>Mollusc cultivation program</h3>\
+<p>After expanding the activities of our ports, we identified opportunities for aquaculture (farming of aquatic organisms). We invited fishermen to participate in the program and they now make a living from farming molluscs (oysters and scallops).</p>',
+            es: '\
+<h3>Programa de cultivo de moluscos</h3>\
+<p>Después expandir las actividades de nuestros puertos, necesitábamos iniciar una actividad de acuicultura (cultivo de especies acuáticas) e invitamos a los pescadores a participar. Ellos se profesionalizaron y hoy viven del cultivo de moluscos (ostras y mejillones).</p>'
         }
     }],
     video: {
