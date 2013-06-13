@@ -201,7 +201,7 @@ body {
   padding: 0;
 }
 
-.caecilia {
+.caecilia, .infoGraficoSemanaFrame .media__body .bl h3 {
   font-family: "CaeciliaLTStd-Bold", Arial, sans-serif;
 }
 
@@ -243,6 +243,8 @@ body {
   font-size: 18px;
   font-size: 1.125rem;
   color: white;
+  margin: 18px 0;
+  padding: 0;
 }
 .infoGraficoSemanaFrame .media__body .bl p {
   font-size: 15px;
@@ -250,11 +252,18 @@ body {
   color: white;
 }
 
+.videoSemana img {
+  border: 0;
+}
+
 .accordionSemana h3 {
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 15px;
-  line-height: 0.9375rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 14px;
+  line-height: 0.875rem;
+  margin: 14px 0;
+  padding: 0;
+  cursor: pointer;
 }
 .accordionSemana h3.active, .accordionSemana h3:hover {
   color: #ecb11f;
@@ -263,9 +272,9 @@ body {
   display: inline-block;
   *display: inline;
   *zoom: 1;
-  vertical-align: middle;
-  line-height: 15px;
-  line-height: 0.9375rem;
+  line-height: 14px;
+  line-height: 0.875rem;
+  vertical-align: baseline;
   width: 11px;
   height: 11px;
   margin-right: 10px;
@@ -273,4 +282,11 @@ body {
 .accordionSemana .contentSemanaAccordion {
   margin: 0;
   padding: 0;
+}
+.accordionSemana .contentSemanaAccordion ul {
+  margin: 0;
+  padding: 0;
+}
+.accordionSemana .contentSemanaAccordion ul li {
+  margin-left: 41px;
 }

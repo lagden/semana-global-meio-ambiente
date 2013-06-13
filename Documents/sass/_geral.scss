@@ -55,8 +55,11 @@ body{
             @extend .bb;
             padding: 230px 140px 0px 160px;
             h3{
+                @extend .caecilia;
                 @include attr-size('font-size', 18);
                 color: $white;
+                margin: 18px 0;
+                padding: 0;
             }
             p{
                 @include attr-size('font-size', 15);
@@ -66,19 +69,30 @@ body{
     }
 }
 
+// Video
+.videoSemana{
+    img {
+        border: 0;
+    }
+}
+
 // Accordion
 .accordionSemana{
+    $size: 14;
     h3{
-        @include attr-size('font-size', 15);
-        @include attr-size('line-height', 15);
+        @include attr-size('font-size', $size);
+        @include attr-size('line-height', $size);
+        margin: #{$size}px 0;
+        padding: 0;
+        cursor: pointer;
         &.active,
         &:hover{
             color: $yellow;
         }
         i{
             @include inline-block;
-            vertical-align: middle;
-            @include attr-size('line-height', 15);
+            @include attr-size('line-height', $size);
+            vertical-align: baseline;
             width: 11px;
             height: 11px;
             margin-right: 10px;
@@ -87,5 +101,12 @@ body{
     .contentSemanaAccordion{
         margin: 0;
         padding: 0;
+        ul{
+            margin: 0;
+            padding: 0;
+            li{
+                margin-left: 41px;
+            }
+        }
     }
 }

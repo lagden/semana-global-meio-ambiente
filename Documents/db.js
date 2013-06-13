@@ -10,7 +10,11 @@ var db = {
 <p>Our company invests in actions that contribute to the sustainable use of natural resources and is committed to the maintenance of ecosystems and the conservation of endangered species.</p>\
 <p>During this week, we would like to discuss with our employees and incorporate into our lives the theme of sustainability and environment, raising environmental awareness across the whole company.</p>\
 <p>Find out more about some of our company’s actions:</p>',
-        es: ''
+        es: '\
+<p>El 5 de junio es el Día Internacional del Medio Ambiente y queremos aprovechar esta fecha para reafirmar nuestro compromiso con la protección del medio ambiente, fundamental en la estrategia de nuestros negocios. </p>\
+<p>Invertimos en acciones que contribuyen al uso sostenible de los recursos naturales y estamos comprometidos con el mantenimiento de los ecosistemas y con la conservación de las especies amenazadas de extinción. </p>\
+<p>Durante esta semana, queremos discutir y tener la vivencia del tema sostenibilidad y medio ambiente con nuestros empleados y despertar la consciencia ambiental en todos. </p>\
+<p>Confiera a continuación algunas acciones de nuestra empresa:</p>'
     },
     infografico: [{
         css: 'barreira',
@@ -69,15 +73,15 @@ var db = {
     },
     exemplo: {
         introducao: {
-            pt: '',
-            en: '',
-            es: ''
+            pt: 'Confira exemplos de ações simples do cotidiano que contribuem para a conservação do meio ambiente:',
+            en: 'Here are some examples of simple, everyday actions to help protect the environment:',
+            es: 'Confiera ejemplos de acciones simples, acciones del cotidiano que contribuyen a la conservación del medio ambiente:'
         },
         accordion: [{
             handler: {
                 pt: 'Rotina de trabalho',
-                en: '',
-                es: ''
+                en: 'Work Routines',
+                es: 'Rutinas de Trabajo'
             },
             body: {
                 pt: '\
@@ -87,14 +91,26 @@ var db = {
 <li>Deixar aberta a torneira apenas quando for usar água; evitar sujar banheiros, refeitórios e outras dependências da empresa</li>\
 <li>Ter a cooperação como valor em detrimento da competição no trabalho</li>\
 </ul>',
-                en: '',
-                es: ''
+                en: '\
+<ul>\
+<li>Participate in campaigns within your unit to conserve and improve the environment. These could be related to water consumption, energy, waste sorting, etc.;</li>\
+<li>Respect your colleagues and look after their health and wellbeing.</li>\
+<li>Only leave the tap on when you need to use the water; avoid dirtying bathrooms, dining halls and any other company facilities; </li>\
+<li>Value cooperation over competition at work.</li>\
+</ul>',
+                es: '\
+<ul>\
+<li>Participe de las campañas de conservación y mejora del medio ambiente referentes al consumo de agua, energía, recolección selectiva, entre otras, de su Unidad;</li>\
+<li>Respeitar os colegas e prezzar pela saúde e bem estar</li>\
+<li>Respete los colegas y preocúpese con su salud y bienestar.</li>\
+<li>Deje abierto el grifo apenas cuando vaya a usar el agua; evite ensuciar baños, comedores y otras dependencias de la empresa;</li>\
+</ul>'
             }
         }, {
             handler: {
                 pt: 'Mobilidade Urbana',
-                en: '',
-                es: ''
+                en: 'Urban Mobility',
+                es: 'Movilidade Urbana'
             },
             body: {
                 pt: '\
@@ -104,14 +120,25 @@ var db = {
 <li>Utilizar bicicleta como veículo de transporte se na sua cidade possuir uma ciclovia segura;</li>\
 <li>Dar preferência à aquisição de veículos mais econômicos e/ou híbridos, sempre que possível.</li>\
 </ul>',
-                en: '',
-                es: ''
+                en: '\
+<ul>\
+<li>Wherever possible, travel short distances on foot;</li>\
+<li>Travel by bicycle if your city has safe bike lanes;</li>\
+<li>Wherever possible, try to purchase more fuel-efficient or hybrid vehicles.</li>\
+</ul>',
+                es: '\
+<ul>\
+<li>Prefiera el transporte colectivo al transporte individual;</li>\
+<li>Siempre que sea posible, camine cuando los trayectos sean menores;</li>\
+<li>Utilice la bicicleta como vehículo de transporte si su ciudad posee una ciclovía segura;</li>\
+<li>Prefiera adquirir vehículos más económicos o híbridos, siempre que sea posible.</li>\
+</ul>'
             }
         }, {
             handler: {
                 pt: 'Consumo de alimento',
-                en: '',
-                es: ''
+                en: 'Food Consumption',
+                es: 'Consumo de Alimentos'
             },
             body: {
                 pt: '\
@@ -121,14 +148,26 @@ var db = {
 <li>Dar preferência ao consumo de produtos orgânicos;</li>\
 <li>Dar preferência ao consumo de produtos nacionais e/ou regionais/ locais;</li>\
 </ul>',
-                en: '',
-                es: ''
+                en: '\
+<ul>\
+<li>Avoid purchasing excess groceries or those with a short shelf life;</li>\
+<li>Read the labels when choosing products at the supermarket;</li>\
+<li>Try to eat more organic produce;</li>\
+<li>Try to consume local/regional/national products;</li>\
+</ul>',
+                es: '\
+<ul>\
+<li>Evite comprar productos superfluos y de baja durabilidad;</li>\
+<li>Lea los rótulos al escoger productos en el supermercado;</li>\
+<li>Prefiera consumir productos orgánicos;</li>\
+<li>Prefiera consumir productos nacionales o regionales/locales;</li>\
+</ul>'
             }
         }, {
             handler: {
-                pt: 'Consumo de energia',
-                en: '',
-                es: ''
+                pt: 'Geração e Descarte de Resíduos',
+                en: 'Generation and Disposal of Waste',
+                es: 'Generación y Desecho de Residuos'
             },
             body: {
                 pt: '\
@@ -138,14 +177,26 @@ var db = {
 <li>Deixar aberta a torneira apenas quando for usar água; evitar sujar banheiros, refeitórios e outras dependências da empresa</li>\
 <li>Ter a cooperação como valor em detrimento da competição no trabalho</li>\
 </ul>',
-                en: '',
-                es: ''
+                en: '\
+<ul>\
+<li>Reuse envelopes; use both sides of the paper;</li>\
+<li>Print only what is necessary and reuse printed paper as scrap before throwing it away;</li>\
+<li>Wherever possible, reduce solid waste to a minimum by using more durable and less disposable products and by reusing packaging and products;</li>\
+<li>Sort waste into paper, plastic, glass and metal; donate collected material to charity or send it for recycling.</li>\
+</ul>',
+                es: '\
+<ul>\
+<li>Reutilice los sobres de correspondencia; utilice los dos lados de la hoja de papel;</li>\
+<li>Imprima solamente lo necesario y reutilice el papel impreso antes de descartarlo;</li>\
+<li>Cuando sea posible reduzca al máximo la producción de residuos sólidos a través de la adquisición de productos más durables y menos desechables y a través de la reutilización de embalajes y productos;</li>\
+<li>Separe papeles, plásticos, vidrios y metales para la recolección selectiva; done el material recogido para instituciones filantrópicas o destínelo para recicladores.</li>\
+</ul>'
             }
         }, {
             handler: {
                 pt: 'Consumo de energia',
-                en: '',
-                es: ''
+                en: 'Energy Consumption',
+                es: 'Consumo de Energía'
             },
             body: {
                 pt: '\
@@ -158,8 +209,26 @@ var db = {
 <li>Comprar geladeiras do tamanho que você precisa (quanto maior ela for mais consumirá energia), evitar abrir a porta sem necessidade e não deixar que ela fique aberta por muito tempo;</li>\
 <li>Instalar sua geladeira em local bem ventilado, evitar colocá-la próxima ao fogão, ou em áreas expostas ao sol </li>\
 </ul>',
-                en: '',
-                es: ''
+                en: '\
+<ul>\
+<li>When purchasing electrical appliances, look for the PROCEL Energy Saving label;</li>\
+<li>Avoid leaving equipment switched on when it isn’t being used;</li>\
+<li>Turn off lights, electrical equipment and air conditioning whenever they are not needed;</li>\
+<li>Wherever possible, put your computer in sleep mode or turn it off if you will not be using it for a while, and don’t forget to turn off any peripherals, such as stabilizers, line filters, scanners and printers; avoid using the elevator to go up or down two floors or less;</li>\
+<li>Try to use fluorescent bulbs, as they are more efficient;</li>\
+<li>Only purchase the size of refrigerator you really need (the bigger it is the more energy it will consume), avoid opening the door if you don’t need to and don’t allow the door to stay open for too long; </li>\
+<li>Install your refrigerator in a well-ventilated area and avoid placing it close to the oven or in areas exposed to sunlight</li>\
+</ul>',
+                es: '\
+<ul>\
+<li>Al comprar aparatos eléctricos, prefiera equipamientos con el sello PROCEL de Economía de Energía;</li>\
+<li>Evite mantener equipamientos conectados sin necesidad;</li>\
+<li>Apague las luces y los equipamientos eléctricos, incluyendo aparatos de aire acondicionado, siempre que no sean necesarios durante el día;</li>\
+<li>Cuando sea posible, coloque la computadora en espera, apague la máquina cuando se ausente por mucho tiempo, no se olvide de apagar también los periféricos de la computadora: estabilizadores, filtros de línea, scanner e impresoras; evite utilizar el elevador para subir un o bajar dos pisos;</li>\
+<li>Prefiera lámparas fluorescentes porque son más económicas;</li>\
+<li>Compre heladeras del tamaño que precisa (cuanto mayor sea más energía consumirá), evite abrir la puerta sin necesidad y no la deje abierta durante mucho tiempo; </li>\
+<li>Instale su heladera en un local muy ventilado, evite colocarla próxima a la cocina, o en áreas expuestas al sol</li>\
+</ul>'
             }
         }]
     }

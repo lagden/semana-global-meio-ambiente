@@ -23,6 +23,7 @@ console.log(currLanguage);
     var $introducao = $('#txtSemanaIntroducao').html(db.introducao[currLanguage]);
 
     // Infografico
+
     function InfograficoSemanaGlobalMeioAmbiente(dados, lingua, path) {
         this.dados = dados.infografico;
         this.path = path || '../Documents/images/';
@@ -43,7 +44,6 @@ console.log(currLanguage);
             that.view.content.append(that.content(v, i));
         });
         this.atual = that.view.content.find(':eq(0)');
-        console.log(this.atual);
         this.listener();
     };
 
@@ -52,7 +52,6 @@ console.log(currLanguage);
     }
 
     InfograficoSemanaGlobalMeioAmbiente.prototype.content = function(v, pos) {
-        console.log(pos);
         var css = (pos > 0) ? 'bl hidden' : 'bl';
         return $('<div class="' + css + ' infografico-' + v.css + '">' + v.info[this.lingua] + '</div>');
     }
@@ -86,6 +85,8 @@ console.log(currLanguage);
         });
     }
 
+    // Accordion
+
     function AccordionSemana(dados, lingua, path) {
         this.dados = dados.exemplo;
         this.path = path || '../Documents/images/';
@@ -97,40 +98,27 @@ console.log(currLanguage);
     AccordionSemana.prototype.init = function() {
         var that = this;
         $.each(that.dados.accordion, function(i, v) {
-            that.$view.append('<h3 class="handler"><i class="ico-bullet-right"></i>' +  v.handler[that.lingua] + '</h3>');
-            that.$view.append('<div class="contentSemanaAccordion">' +  v.body[that.lingua] + '</div>');
+            that.$view.append('<h3 class="handler"><i class="ico-bullet-right"></i>' + v.handler[that.lingua] + '</h3>');
+            that.$view.append('<div class="contentSemanaAccordion">' + v.body[that.lingua] + '</div>');
         });
         this.$view.find('.contentSemanaAccordion').slideUp();
         this.$view.find('.handler').data('open', true);
-        this.listener();
-    };
-
-    AccordionSemana.prototype.listener = function() {
-        var that = this;
-        this.$view.on('click', '> .handler', {
-            "that": that
-        }, that.toggle);
+        this.$view.on('click', '> .handler', that.toggle);
     };
 
     AccordionSemana.prototype.toggle = function(ev) {
-        var that = ev.data.that,
-            $this = $(this);
-
-        var toggle = $this.data('open');
-        console.log(toggle);
+        var $this = $(this),
+            toggle = $this.data('open');
 
         $(this).next(':eq(0)').slideToggle({
             duration: 400,
             queue: false,
             complete: function() {
                 var i = $this.find('> i:eq(0)');
-                if( $this.data('open') )
-                {
+                if ($this.data('open')) {
                     $this.addClass('active');
                     i.removeClass('ico-bullet-right').addClass('ico-bullet-down');
-                }
-                else
-                {
+                } else {
                     $this.removeClass('active');
                     i.removeClass('ico-bullet-down').addClass('ico-bullet-right');
                 }
@@ -150,6 +138,9 @@ $('#videoSemana').append('\
 <a href="' + db.video[currLanguage].link + '" title="' + db.video[currLanguage].alt + '">\
 <img class="bl" src="' + pathImg + db.video[currLanguage].img + '" alt="' + db.video[currLanguage].alt + '">\
 </a>');
+
+// Intro Accordion
+$('#introAccordionSemana').append(db.exemplo.introducao[currLanguage]);
 
 // Preload
 $('#preloadImgsSemana').imagesLoaded()
